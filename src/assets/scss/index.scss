@@ -1,0 +1,107 @@
+// * {
+//   box-sizing: border-box;
+// }
+
+// html, body, #root {
+//   width: 100%;
+//   height: 100%;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// #root {
+//   font-family: menlo;
+//   color: whitesmoke;
+//   background: rgb(73, 73, 73);
+//   // background-image: linear-gradient(0deg, rgba(47,47,52,1) 0%, rgba(82,76,76,1) 100%);
+
+//   display: flex;
+//   flex-flow: column;
+//   justify-content: space-between;
+// }
+
+// #view {
+//   height: inherit;
+//   flex: 2 1 auto;
+//   outline: 2px solid red;
+//   // height: auto;
+// }
+
+// #wrapper-pagination {
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// #pagination {
+//   background: orange;
+//   padding: 10px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   // flex: 0 1 auto;
+//   border-radius: 0.5em 0.5em 0 0;
+
+//   gap: 20px;
+
+//   button {
+//     color: black;
+//   }
+// }
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#root {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.navigation {
+	font-family: 'Menlo', monospace;
+	width: 100%;
+	padding: 1em;
+	background-color: lightblue;
+	// box-shadow: 0px 0px 20px 20px lightblue;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	z-index: -1;
+}
+
+.wrap {
+	position: relative;
+	width: max-content;
+	height: max-content;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+canvas {
+	width: 100%;
+	height: 100%;
+	display: block;
+}

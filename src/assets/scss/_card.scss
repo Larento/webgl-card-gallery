@@ -1,0 +1,30 @@
+.card {
+	padding: 0.5em;
+	border-radius: 0.5em;
+	// background-color: darkgray;
+	display: flex;
+	flex-direction: column;
+	user-select: none;
+
+	button {
+		margin: 0.5em;
+		padding: 0.5em;
+		border: none;
+		border-radius: 0.25em;
+		color: whitesmoke;
+		box-shadow: 0 0 5px orangered;
+	}
+
+	.info {
+		background-color: dodgerblue;
+	}
+
+	.play {
+		background-color: yellowgreen;
+	}
+
+	h2 {
+		display: block;
+		color: whitesmoke;
+	}
+}
